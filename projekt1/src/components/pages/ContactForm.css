@@ -1,0 +1,32 @@
+/* ContactForm.css */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-container label {
+    margin-bottom: 10px;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container textarea,
+  .form-container button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  

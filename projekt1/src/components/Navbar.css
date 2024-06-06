@@ -1,0 +1,127 @@
+.active{
+    background-color: #d88b1d;
+}
+.logo img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70px; /* Szerokość obrazu */
+    height: auto; /* Automatyczna wysokość, proporcjonalna do szerokości */
+
+    
+    
+    
+    transition: transform 0.3s ease-in-out; /* Płynne przejście dla efektu interaktywności */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Powiększenie obrazu po najechaniu myszką */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a3a06;
+    color: white;
+    position: sticky;
+    top: 0;
+    justify-content: center; /* Wyśrodkowanie całej nawigacji wzdłuż osi poziomej */
+}
+
+
+nav .title {
+    font-size: 1.9rem;
+    margin: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(21, 202, 75);
+    font-family: cursive;
+    
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+   list-style: none; 
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+nav ul li a:not(.active):hover {
+    background-color:#98c51c ;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    
+    height: 0.4rem;
+    width: 100%;
+    background-color: #5ed410;
+    border-radius: 0.2rem;
+}
+
+
+/* ... (pozostały kod CSS) ... */
+
+@media (max-width: 480px) {
+    nav .menu {
+        display: flex;
+        margin-top: 1.1rem;
+    }
+    .logo img { 
+        display: none; /* Ukrywa obrazek logo w trybie responsywnym */
+    }
+
+  
+
+    nav {
+        flex-direction: column;
+        align-items: center; /* Wyśrodkowanie elementów w pionie */
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.5rem 0; /* Usunięcie marginesów bocznych */
+    }
+    
+    nav .title {
+        order: -1; /* Ustawia tytuł jako pierwszy element */
+        margin-bottom: 1rem; /* Dodatkowy margines dla odstępu */
+    }
+}

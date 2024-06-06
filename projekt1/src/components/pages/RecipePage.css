@@ -1,0 +1,57 @@
+/* RecipePage.css */
+
+/* Stylizacja dla głównego kontenera strony */
+.recipe-page {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Stylizacja dla nagłówka strony */
+.recipe-page h1 {
+  margin-bottom: 30px;
+}
+
+/* Stylizacja dla kontenera kafelków */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Stylizacja dla pojedynczego kafelka */
+.recipe-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylizacja dla zdjęcia w kafelku */
+.recipe-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Stylizacja dla opisu w kafelku */
+.recipe-description {
+  margin-top: 20px;
+}
+
+/* Stylizacja dla tytułu przepisu w kafelku */
+.recipe-description h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Stylizacja dla opisu przepisu w kafelku */
+.recipe-description p {
+  font-size: 18px;
+}
+.recipe-page h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; /* Kolor tekstu */
+    margin-bottom: 20px; /* Odstęp na dole */
+    
+  }
+  

@@ -1,0 +1,50 @@
+/* src/App.css */
+.App {
+    text-align: center;
+  }
+  
+  .contact-form {
+    margin: 20px auto; /* Wyśrodkowanie formularza */
+    padding: 20px;
+    border: 1px solid #f0ad4e; /* Jasnożółta obwódka */
+    border-radius: 5px;
+    max-width: 500px;
+    background-color: white; /* Jasnożółte tło */
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form div {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #856404; /* Ciemniejszy odcień żółtego dla etykiet */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da; /* Delikatna obwódka */
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 10px 15px;
+    background-color: #ffc107; /* Jasnożółty kolor przycisku */
+    color: #212529; /* Czarny tekst */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ffca28; /* Jasnożółty kolor przycisku przy hover */
+  }
+  
